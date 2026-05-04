@@ -1,44 +1,40 @@
-import type {ReactNode} from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
+import React from 'react';
 
-import styles from './index.module.css';
-
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+export default function Home() {
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
+    <main style={{ padding: 40, fontFamily: 'Arial' }}>
+      
+      <h1>🦈 The Drunk Sharks Shop</h1>
+      <p>Welcome to the official shop guide system.</p>
+
+      {/* RED RING WARNING */}
+      <div
+        style={{
+          marginTop: 50,
+          padding: 30,
+          borderRadius: 999,
+          border: '6px solid red',
+          backgroundColor: '#2b0000',
+          color: 'white',
+          textAlign: 'center',
+          maxWidth: 500,
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          boxShadow: '0 0 25px red',
+        }}
+      >
+        <div style={{ fontSize: 50 }}>🚨</div>
+
+        <h2 style={{ color: 'red', marginBottom: 10 }}>
+          IMPORTANT NOTICE
+        </h2>
+
+        <p style={{ fontWeight: 'bold' }}>
+          If any information on this site is incorrect or outdated,
+          please contact <span style={{ color: 'red' }}>We1rd</span>
+        </p>
       </div>
-    </header>
-  );
-}
 
-export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
+    </main>
   );
 }
