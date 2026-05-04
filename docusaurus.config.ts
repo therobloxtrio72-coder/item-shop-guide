@@ -68,77 +68,84 @@ const config: Config = {
     ],
   ],
 
-  themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
-    colorMode: {
-      respectPrefersColorScheme: true,
+ themeConfig: {
+  image: 'img/docusaurus-social-card.jpg',
+  colorMode: {
+    respectPrefersColorScheme: true,
+  },
+
+  navbar: {
+    title: 'Drunk Sharks Shop',
+    logo: {
+      alt: 'Drunk Sharks Logo',
+      src: 'img/logo.svg',
     },
-    navbar: {
-      title: 'My Site',
-      logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+    items: [
+      {
+        type: 'docSidebar',
+        sidebarId: 'tutorialSidebar',
+        position: 'left',
+        label: 'Guide',
       },
-      items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
-      ],
-    },
-    footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      {
+        to: '/docs/links',
+        label: 'Links',
+        position: 'left',
+      },
+    ],
+  },
+
+  footer: {
+    style: 'dark',
+    links: [
+      {
+        title: 'Guide',
+        items: [
+          {
+            label: 'Getting Started',
+            to: '/docs/getting-started',
+          },
+          {
+            label: 'Shop Guide',
+            to: '/docs/shop-guide',
+          },
+          {
+            label: 'Orders',
+            to: '/docs/orders',
+          },
+        ],
+      },
+      {
+        title: 'Support',
+        items: [
+          {
+            label: 'Support Chat',
+            to: '/docs/support-chat',
+          },
+          {
+            label: 'Forums',
+            to: '/docs/forums',
+          },
+          {
+            label: 'Appeal Form',
+            href: 'https://forms.gle/taZHG6cpEm4BFfFr9',
+          },
+        ],
+      },
+      {
+        title: 'Community',
+        items: [
+          {
+            label: 'WhatsApp Channel',
+            href: 'https://tinyurl.com/thedrunksharks',
+          },
+        ],
+      },
+    ],
+
+    copyright: `© ${new Date().getFullYear()} Drunk Sharks Item Shop`,
+  },
+},
     },
     prism: {
       theme: prismThemes.github,
