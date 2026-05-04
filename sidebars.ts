@@ -8,4 +8,5 @@ tutorialSidebar: [
   'changelog',
   'maintenance',
   'links',
+  'login'
 ],
