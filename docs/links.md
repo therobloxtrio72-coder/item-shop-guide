@@ -24,7 +24,7 @@ Use these official forms for applications, appeals, and feedback:
 Join our official WhatsApp channel for updates and support:
 
 - 🦈 WhatsApp Channel  
-  https://tinyurl.com/thedrunksharks  
+  https://tinyurl.com/thedrunkshark  
 
 ---
 
